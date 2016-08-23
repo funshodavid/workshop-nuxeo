@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<component name="com.workshop.securitypolicy">
+    <extension target="org.nuxeo.ecm.core.security.SecurityService"
+               point="policies">
+        <policy name="test"
+                class="com.workshop.security.WorkshopSecurityPolicy"/>
+    </extension>
+</component>

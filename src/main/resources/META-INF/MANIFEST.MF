@@ -1,0 +1,15 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.workshop
+Bundle-Version: 1.0.0
+Bundle-Name: workshop-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.workshop.workshop-core;singleton=true
+Nuxeo-Component: OSGI-INF/workshop-service-service.xml,
+ OSGI-INF/com.workshop-visual-adapter-contrib.xml,
+ OSGI-INF/com.workshop-product-adapter-contrib.xml,
+ OSGI-INF/price-updater-operation-contrib.xml,
+ OSGI-INF/product-listener-listener-contrib.xml,
+ OSGI-INF/security-policy-contrib.xml,
+ OSGI-INF/com.workshop-productSeamComponent.xml

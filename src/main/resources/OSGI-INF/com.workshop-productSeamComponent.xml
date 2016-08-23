@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<component name="com.workshop.seamBean.workshopActionsBean">
+
+    <extension target="org.nuxeo.ecm.platform.actions.ActionService"
+               point="actions">
+
+        <action id="com.workshop.seamBean.workshopActionsBean"
+                link="#{addDistributor.run}"
+                order="200" label="Add distributor" type="fancybox">
+            <category>DOCUMENT_UPPER_ACTION</category>
+            <properties>
+                <property name="include">/incl/add_distribution_template.xhtml</property>
+            </properties>
+            <filter id="com.workshop.seamBean.addDistributorActionsBean">
+                <rule grant="true">
+                    <type>Product</type>
+                </rule>
+            </filter>
+        </action>
+    </extension>
+</component>

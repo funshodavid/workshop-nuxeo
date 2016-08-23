@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<component name="com.workshop.service.contrib" version="1.0">
+    <extension target="com.workshop.service.workshop-service" point="operations">
+        <operation operator="minus" amount="2.0"></operation>
+    </extension>
+</component>

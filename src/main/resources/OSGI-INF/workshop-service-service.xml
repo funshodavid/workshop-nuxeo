@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<component name="com.workshop.service.workshop-service" version="1.0">
+
+    <implementation class="com.workshop.WorkshopServiceImpl"/>
+
+    <service>
+        <provide interface="com.workshop.WorkshopService"/>
+    </service>
+    <extension-point name="operations">
+        <documentation>
+            This extension can be used to change the operator and the amount for updating the price
+        </documentation>
+        <object class="com.workshop.extension.OperationDescriptor"/>
+    </extension-point>
+</component>
